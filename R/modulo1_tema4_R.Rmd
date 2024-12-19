@@ -50,6 +50,8 @@ paises07 <- as.data.frame(paises %>% filter(anio==2007))
 ```{r, eval=FALSE}
 paises07 %>% head(10)
 ```
+install.packages("remotes")
+remotes::install_github("rstudio/webshot2")
 
 ```{r echo=FALSE, results='hide', warning=FALSE}
 kable(paises07%>%head(10), "html", booktabs=TRUE) %>%
